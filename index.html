@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta de Palabras</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+    <div id="start-screen">
+        <h1>¡Ruta de Palabras!</h1> <!-- Título del juego en la pantalla de inicio -->
+        <img src="imagenes/portada.jpeg" alt="imagen portada" class="img"><br></br>
+        <button id="start-button">Iniciar</button> <!-- Botón para iniciar el juego -->
+        <div>
+            <h3>¡Ruta de Palabras!</h3> <!-- Título del juego -->
+            <p class="game-description_text"><strong>Bienvenido a "Ruta de Palabras"</strong>, una emocionante sopa de letras para divertirse mientras aprendemos palabras que tengan que ver con la seguridad vial.</p>
+            <p class="game-description_rules"><strong>REGLAS:</strong> En este juego, se te presenta una cuadrícula de letras de 12x12 en la que se encuentran ocultas diez palabras relacionadas con la seguridad en las carreteras. Las palabras que debes encontrar son: "cinturon", "señales", "semaforo", "peatones", "auto", "moto", "choque", "luces", "trafico" y "estacionar".</p>
+            <p class="game-description_author"><strong>AUTOR:</strong> Carolina Julieta Piñeiro</p>
+            <p class="game-description_author"><strong>Repositorio de GitHub:</strong></p>
+
+        </div>
+    </div>
+    <div id="game-container" style="display: none;">
+        <h1>Ruta de Palabras</h1> <!-- Título del juego en la pantalla del juego -->
+        <div id="word-search-container"></div> <!-- Contenedor de la sopa de letras -->
+        <div id="word-list">
+            <h2>Encuentra las palabras:</h2> <!-- Título de la lista de palabras a buscar -->
+            <ul>
+                <!-- Lista de palabras a buscar -->
+                <li data-word="CINTURON">cinturon</li>
+                <li data-word="SEÑALES">señales</li>
+                <li data-word="SEMAFORO">semaforo</li>
+                <li data-word="PEATONES">peatones</li>
+                <li data-word="AUTO">auto</li>
+                <li data-word="MOTO">moto</li>
+                <li data-word="CHOQUE">choque</li>
+                <li data-word="LUCES">luces</li>
+                <li data-word="TRAFICO">trafico</li>
+                <li data-word="ESTACIONAR">estacionar</li>
+            </ul>
+        </div>
+    </div>
+    <div id="message"></div> <!-- Div para mostrar mensajes de felicitación -->
+    <button id="restart-button" style="display: none;">Volver a empezar</button> <!-- Botón para reiniciar el juego -->
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</body>
+</html>

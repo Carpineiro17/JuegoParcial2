@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente utilizada para el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5; /* Color de fondo de la página */
+    margin: 0;
+    padding: 20px;
+}
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra vertical y horizontalmente los elementos */
+    height: 100vh; /* Toma toda la altura de la pantalla */
+    width: 100%;
+    background-color: #b3e5fc; /* Color celeste bebé del fondo */
+}
+#start-screen h1 {
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+#start-button {
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px;
+    cursor: pointer;
+}
+.img {
+    max-width: 500px;
+    height: auto;
+}
+/* Estilos adicionales para los párrafos de reglas y autor */
+.game-description {
+    text-align: center;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.game-description_text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.game-description_rules {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.game-description_author {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+}
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#game-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+#word-search-container {
+    display: grid;
+    grid-template-columns: repeat(12, 30px); /* Tamaño de las columnas */
+    gap: 5px; /* Espacio entre elementos */
+    margin-bottom: 20px;
+}
+#word-search-container div {
+    width: 30px;
+    height: 30px;
+    background-color: #fff; /* Color de fondo de las celdas */
+    border: 1px solid #ccc; /* Borde de las celdas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Estilo del texto */
+    cursor: pointer;
+}
+#word-search-container div.selected {
+    background-color: #5ab4fa; /* Color de fondo cuando está seleccionada */
+}
+#word-search-container div.correct {
+    background-color: #3e4850; /* Color de fondo cuando está marcada como correcta */
+}
+#word-list {
+    margin-top: 20px;
+}
+#word-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+#word-list li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+#word-list li.found {
+    text-decoration: line-through; /* Tachado de las palabras encontradas */
+}
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #5ab4fa;
+    display: none; /* Oculta el mensaje inicialmente */
+    position: fixed; /* Posición fija para mantenerlo en el centro */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+    background-color: white; /* Color de fondo del mensaje */
+    padding: 20px;
+    border: 2px solid #5ab4fa; /* Borde del mensaje */
+    border-radius: 10px; /* Bordes redondeados */
+    z-index: 1000; /* Capa superior */
+    text-align: center;
+}
+#restart-button {
+    display: none; /* Oculta el botón de reinicio inicialmente */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
